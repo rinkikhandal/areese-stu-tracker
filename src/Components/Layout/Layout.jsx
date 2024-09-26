@@ -14,9 +14,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="bg-gray-200 min-h-[100vh]">
+      <div className="bg-gray-200  min-h-screen  pb-10">
         <Navbar path={path} />
-        <main>{children}</main>
+        <main className="mt-10 px-8 md:px-11 xl:px-36">{children}</main>
       </div>
     </>
   );

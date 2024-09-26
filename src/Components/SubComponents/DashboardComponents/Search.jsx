@@ -9,7 +9,7 @@ const Search = ({ handleSearchForm, closeOverlay }) => {
         <BsSearch className=" text-primary_blue" />
         <form action="#" onSubmit={handleSearchForm}>
           <input
-            type="text"
+            type="search"
             className="focus:outline-none text-sm caret-primary_blue placeholder:text-primary_orange text-sky-600"
             placeholder="Search"
             name="dashSearch"

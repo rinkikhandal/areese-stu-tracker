@@ -4,11 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+datalist {
+  z-index: 999;
+}
+
 /* sm	640px	@media (min-width: 640px) { ... }
 md	768px	@media (min-width: 768px) { ... }
 lg	1024px	@media (min-width: 1024px) { ... }
 xl	1280px	@media (min-width: 1280px) { ... }
 2xl	1536px	@media (min-width: 1536px) { ... } */
+/* Styling the date input field */
+
+/* Changing the color of the placeholder text */
+
+/* Remove arrows (appearance is browser-specific) */
+/* input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+} */
+
+/* Styling the calendar icon (works on some browsers) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: #999;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
 @layer components {
   /* =========Default CSS======== */
@@ -16,7 +39,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
     background-color: #034769;
   } */
   body {
-    @apply font-Poppins  max-w-[100%];
+    @apply font-Poppins max-w-[100%];
   }
 
   h1 {
@@ -53,5 +76,18 @@ xl	1280px	@media (min-width: 1280px) { ... }
 
   span {
     @apply inline-block;
+  }
+
+  input {
+    @apply box-border h-9;
+    font-size: 0.8rem !important;
+  }
+
+  th {
+    @apply font-semibold text-xs;
+  }
+
+  input[type="date"]::placeholder {
+    @apply text-gray-200;
   }
 }

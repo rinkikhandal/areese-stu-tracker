@@ -15,7 +15,7 @@ const Navbar = ({ path }) => {
               className={
                 path === "dashboard"
                   ? "bg-primary_orange text-white rounded px-2 py-1 tracking-wide transition lg:text-base text-sm"
-                  : "hover:bg-secondary_orange hover:text-white rounded px-2 py-1 tracking-wide transition lg:text-base text-sm"
+                  : "hover:bg-secondary_orange hover:text-white text-primary_orange font-medium rounded px-2 py-1 tracking-wide transition lg:text-base text-sm"
               }
             >
               <Link to="/dashboard">Dashboard</Link>
